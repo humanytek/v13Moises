@@ -16,9 +16,9 @@
         <field name="model">res.partner</field>
         <field name="inherit_id" ref="base.res_partner_kanban_view"/>
         <field name="arch" type="xml">
-            <div class="oe_kanban_partner_links" position="after">
+            <span class="oe_kanban_partner_links" position="after">
                 <field name="to_mig"/>
-            </div>
+            </span>
         </field>
     </record>
 </odoo>
