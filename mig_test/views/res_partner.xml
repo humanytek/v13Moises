@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="res_partner_view_form" model="ir.ui.view">
+        <field name="name">res_partner.view.form.inherit.mig</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <field name="vat" position="after">
+                <field name="to_mig"/>
+            </field>
+        </field>
+    </record>
+
+    <record id="res_partner_view_kanban" model="ir.ui.view">
+        <field name="name">res_partner.view.kanban.inherit.mig</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.res_partner_kanban_view"/>
+        <field name="arch" type="xml">
+            <div class="oe_kanban_partner_links" position="after">
+                <field name="to_mig"/>
+            </div>
+        </field>
+    </record>
+</odoo>
